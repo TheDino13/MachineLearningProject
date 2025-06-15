@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
@@ -15,7 +16,7 @@ plt.rcParams['figure.figsize'] = (10, 6)
 plt.rcParams['font.size'] = 12
 
 try:
-    data = pd.read_csv("E:\lk\student_habits_performance.csv")
+    data = pd.read_csv("*your path*")
     print("Data loaded successfully.")
 except FileNotFoundError:
     print("Error: File not found.")
